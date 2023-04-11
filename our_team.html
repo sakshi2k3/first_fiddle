@@ -92,38 +92,72 @@
         height: 230px;
         
       }
+      .moblogo{
+            display: none;
+         }
+
+       @media(max-width: 768px)
+       {
+         .moblogo{
+            display: block;
+         }
+         .weblogo{
+          display: none;
+         }
+         .navbar{
+          background: #fcb21b !important;
+    
+         }
+         .img12{
+          margin-top: 78px;
+         }
+        .mobile{
+          margin-top: 40px;
+        }
+       }
+       @media(max-width: 280px){
+        .mobile{
+          margin-top: 40px;
+        }
+        .moblogo{
+          
+            width: 70px;
+         }
+       }
+     
+
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
-        <div class="container-fluid">
-          <a href="" class="navbar-brand">
-            <img
-              src="https://www.firstfiddle.in/assets/images/ff-logo-02.png"
-              class="weblogo"
-            />
-            <img src="https://www.firstfiddle.in/assets/images/logo-for-mobile.png" class="moblogo"> 
-            </a>    
-          <!--mobile menu-->
-          <button class="navbar-toggler "data-bs-target = "#ab" data-bs-toggle = "collapse">
-            <i class="navbar-toggler-icon"></i>
-          </button>
-          <!--list start-->
-          <div class="navbar-collapse collapse" id = "ab">
-            <ul class="navbar-nav ms-auto text-center">
-     
-              <li><a href="fir_fiddle.html" class="nav-link">HOME</a></li>
-              <li><a href="about2.html" class="nav-link">ABOUT</a></li>
-              <li><a href="brands.html" class="nav-link">BANDS</a></li>
-              <li><a href="our_team.html" class="nav-link">OUR TEAM</a></li> 
-              <li><a href="press_release.html" class="nav-link">PRESS RELEASE</a></li>
-              <li><a href="contact.html" class="nav-link">CONTACT</a></li>
-              <li><a href="career.html" class="nav-link">CAREERS</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- container-fluid end-->
-      </nav>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
+    <div class="container-fluid">
+      <a href="" class="navbar-brand">
+        <img
+          src="https://www.firstfiddle.in/assets/images/ff-logo-02.png"
+          class="weblogo"
+        />
+        <img src="https://www.firstfiddle.in/assets/images/logo-for-mobile.png" class="moblogo"> 
+        </a>    
+      <!--mobile menu-->
+      <button class="navbar-toggler "data-bs-target = "#ab" data-bs-toggle = "collapse">
+        <i class="navbar-toggler-icon"></i>
+      </button>
+      <!--list start-->
+      <div class="navbar-collapse collapse" id = "ab">
+        <ul class="navbar-nav ms-auto text-center">
+ 
+          <li><a href="fir_fiddle.html" class="nav-link">HOME</a></li>
+          <li><a href="about2.html" class="nav-link">ABOUT</a></li>
+          <li><a href="brands.html" class="nav-link">BRANDS</a></li>
+          <li><a href="our_team.html" class="nav-link">OUR TEAM</a></li> 
+          <li><a href="press_release.html" class="nav-link">PRESS RELEASE</a></li>
+          <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+          <li><a href="career.html" class="nav-link">CAREERS</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- container-fluid end-->
+  </nav>
       <div class="container-fluid banner1">
         <div class="container">
           <div class="row">
@@ -169,55 +203,59 @@
       <div class="container-fluid">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 ">
-              <div class="card">
-            <img src="https://app.firstfiddle.in/images/ff_meet_team/YPAshok.jpg" class="img-fluid shadowimg" alt="">
-          <div class="card-body text-center">
-            <h3>Y. P. ASHOK</h3>
-            <p>Chairman</p>
+            <div class="col-md-4 mt-4 ">
+              <div class="card text-bg-light">
+                <img src="https://app.firstfiddle.in/images/ff_meet_team/YPAshok.jpg" class="card-img  shadowimg" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title text-white text-center fs-3  " style="margin-top: 267px;">Y. P. ASHOK</h5>
+                  <p class="card-text text-white text-center">Chairman</p>
+                  
+                </div>
+                </div> 
           </div>
-          </div>  
-          </div>
-            <div class="col-md-4 ">
-              <div class="card">
-              <img src="https://app.firstfiddle.in/images/ff_meet_team/B.R.-Sachdeva.jpg" class="img-fluid shadowimg" alt="">
-            <div class="card-body text-center">
-              <h3>B.R. SACHDEVA</h3>
-              <p>Director Finance & Legal</p>
+            <div class="col-md-4 mt-4 ">
+              <div class="card text-bg-light">
+                <img src="https://app.firstfiddle.in/images/ff_meet_team/B.R.-Sachdeva.jpg" class="card-img  shadowimg" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title text-white text-center fs-3  " style="margin-top: 267px;">B.R. SACHDEVA</h5>
+                  <p class="card-text text-white text-center">Director Finance & Legal</p>
+                  
+                </div>
+                </div>    
             </div>
-            </div>
-            </div>
-            <div class="col-md-4  ">
-              <div class="card">
-              <img src="https://app.firstfiddle.in/images/ff_meet_team/Sagar-Bajaj.jpg"  class="img-fluid shadowimg"alt="">
-            <div class="card-body text-center">
-              <h3>SAGAR BAJAJ
-              </h3>
-               <p>Corporate Chef</p>
-            </div>
-            </div>
+            <div class="col-md-4  mt-4 ">
+              <div class="card text-bg-light">
+                <img src="https://app.firstfiddle.in/images/ff_meet_team/Sagar-Bajaj.jpg" class="card-img  shadowimg" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title text-white text-center fs-3  " style="margin-top: 267px;">SAGAR BAJAJ</h5>
+                  <p class="card-text text-white text-center">Corporate Chef </p>
+                  
+                </div>
+                </div>
             </div>
           </div>
         </div> <!--first row-->
         <div class="container">
           <div class="row">
             <div class="col-md-4 mt-4 ">
-              <div class="card">
-            <img src="https://app.firstfiddle.in/images/ff_meet_team/JAY-PHOTO-1-1.jpg  " class="img-fluid shadowimg "  alt="">
-          <div class="card-body text-center">
-            <h3>JAY SHANKAR NATRAJ</h3>
-            <p>Franchise Lead</p>
-          </div>  
-          </div>
+              <div class="card text-bg-light">
+                <img src="https://app.firstfiddle.in/images/ff_meet_team/JAY-PHOTO-1-1.jpg" class="card-img   shadowimg" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title text-white text-center fs-3  " style="margin-top: 267px;">JAY SHANKAR NATRAJ</h5>
+                  <p class="card-text text-white text-center">Franchise Lead</p>
+                  
+                </div>
+                </div>
             </div>
-            <div class="col-md-4 mt-4  ">
-              <div class="card">
-              <img src="https://app.firstfiddle.in/images/ff_meet_team/vibhutiPR.jpg " class="img-fluid shadowimg" alt="">
-            <div class="card-body text-center">
-              <h3>VIBHUTI SOOD</h3>
-              <p>PR And Communications Head</p>
-            </div>
-            </div>
+            <div class="col-md-4 mt-4 ">
+              <div class="card text-bg-light">
+                <img src="https://app.firstfiddle.in/images/ff_meet_team/vibhutiPR.jpg" class="card-img  shadowimg" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title text-white text-center fs-3  " style="margin-top: 267px;">VIBHUTI SOOD</h5>
+                  <p class="card-text text-white text-center">PR And Communications Head</p>
+                  
+                </div>
+                </div>
             </div>
             <div class="col-md-4 mt-4">
               <img src=""  class="img-fluid"alt="">
@@ -268,6 +306,7 @@
                     <i class="fa-brands fa-square-facebook i"></i>
                     <i class="fa-brands fa-twitter i"></i>
                     <i class="fa-brands fa-instagram i"></i>
+                    <i class="fa-light fa-location-dot" style="color: #fab005;"></i>
                   </div>
                 </div>
               </div>       

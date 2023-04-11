@@ -9,7 +9,8 @@
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
-    />
+    /><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" >
     <title>Document</title>
     <style>
@@ -22,6 +23,19 @@
         margin: 6px;
         cursor: pointer;
       }
+      .navbar{
+        background: #1d1c1c82!important;
+      }
+      .navbar-nav li
+        {
+         padding: 0 10px;
+         }
+       .navbar-nav li a
+      {
+        color: #fff!important;
+        font-weight: 600;
+        font-size: 20px;
+       }
       .banner1 {
         background: url(https://www.firstfiddle.in/assets/images/brands.jpg);
         width: 100%;
@@ -44,31 +58,64 @@
         height: 230px;
         
       }
+      .moblogo{
+            display: none;
+         }
+      @media(max-width: 768px)
+       {
+         .moblogo{
+            display: block;
+         }
+         .weblogo{
+          display: none;
+         }
+         .navbar{
+          background: #fcb21b !important;
+    
+         }
+         .img12{
+          margin-top: 78px;
+         }
+        .mobile{
+          margin-top: 40px;
+        }
+       }
+      @media(max-width: 280px){
+        .mobile{
+          margin-top: 40px;
+        }
+        .moblogo{
+            
+            width: 70px;
+         }
+       }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
       <div class="container-fluid">
         <a href="" class="navbar-brand">
           <img
             src="https://www.firstfiddle.in/assets/images/ff-logo-02.png"
             class="weblogo"
           />
-        </a>
+          <img src="https://www.firstfiddle.in/assets/images/logo-for-mobile.png" class="moblogo"> 
+          </a>    
         <!--mobile menu-->
-        <button class="navbar-toggler">
+        <button class="navbar-toggler "data-bs-target = "#ab" data-bs-toggle = "collapse">
           <i class="navbar-toggler-icon"></i>
         </button>
         <!--list start-->
-        <div class="navbar-collapse collapse">
-          <ul class="navbar-nav">
-            <li><a href="fir_fiddle.html" class="nav-link">Home</a></li>
-            <li><a href="about2.html" class="nav-link">About</a></li>
-            <li><a href="brands.html" class="nav-link">Brands</a></li>
-            <li><a href="" class="nav-link">Home</a></li>
-            <li><a href="" class="nav-link">Home</a></li>
-            <li><a href="" class="nav-link">Home</a></li>
-            <li><a href="" class="nav-link">Home</a></li>
+        <div class="navbar-collapse collapse" id = "ab">
+          <ul class="navbar-nav ms-auto text-center">
+   
+            <li><a href="fir_fiddle.html" class="nav-link">HOME</a></li>
+            <li><a href="about2.html" class="nav-link">ABOUT</a></li>
+            <li><a href="brands.html" class="nav-link">BRANDS</a></li>
+            <li><a href="our_team.html" class="nav-link">OUR TEAM</a></li> 
+            <li><a href="press_release.html" class="nav-link">PRESS RELEASE</a></li>
+            <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+            <li><a href="career.html" class="nav-link">CAREERS</a></li>
           </ul>
         </div>
       </div>
